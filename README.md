@@ -11,8 +11,8 @@ Requirements
 
 Python 3 (tested with 3.12 versions)
 requests library (pip install requests)
-subprocess library (included in standard library)
-threading library (included in standard library)
+subprocess library (included in the standard library)
+threading library (included in the standard library)
 Windows PowerShell (pre-installed on Windows systems)
 Installation
 
@@ -26,7 +26,7 @@ Run the script with the -a (activate) argument:
 
 Bash
 So that Windows Task Scheduler can run it easily.
-(On my machines it's set to run every 10 minutes (because the database get's refreshed every 5 minutes) after any user logs in) 
+(On my machines, it's set to run every 10 minutes (because the database get's refreshed every 5 minutes) after any user logs in) 
 python main.py -a
 Use code with caution.
 The script will download the IP blocklist, create firewall rules for each IP, and block both outgoing and incoming connections to those IPs.
@@ -38,4 +38,4 @@ The script assumes the IP blocklist format from Abuse CH. Changes in the format 
 Consider creating a scheduled task to automatically update the firewall rules periodically.
 Contributing
 
-We welcome contributions to this project! Feel free to fork the repository, make changes, and submit pull requests.
+Contributions to this project are welcome! Feel free to fork the repository, make changes, and submit pull requests.
