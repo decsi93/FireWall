@@ -1,7 +1,7 @@
-This Python script fetches a list of malicious IP addresses from Abuse CH's IP blocklist and dynamically adds them to your Windows firewall rules,
+This Python script fetches a list of malicious IP addresses from Abuse CH's IP blocklist and dynamically adds them to the Windows firewall rules,
 blocking both outgoing and incoming connections to those IPs.
 
-Features
+Features:
 
 Retrieves the latest IP blocklist from Abuse CH
 Filters out comment lines in the CSV data
@@ -17,7 +17,7 @@ Windows PowerShell (pre-installed on Windows systems)
 Installation
 
 Download or clone this repository.
-Install the requests library using pip install requests.
+Install the _requests_ library using pip install requests.
 Usage
 
 Open a command prompt or terminal and navigate to the project directory.
@@ -26,7 +26,7 @@ Run the script with the -a (activate) argument:
 
 Bash
 So that Windows Task Scheduler can run it easily.
-(On my machines, it's set to run every 10 minutes (because the database get's refreshed every 5 minutes) after any user logs in) 
+(On my machines, it's set to run every 10 minutes (because the Abuse.CH database gets refreshed every 5 minutes) after any user logs in) 
 python main.py -a
 Use code with caution.
 The script will download the IP blocklist, create firewall rules for each IP, and block both outgoing and incoming connections to those IPs.
